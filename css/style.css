@@ -239,6 +239,15 @@ ul {
   padding-bottom: 40px;
 }
 
+.hero__media {
+  display: none;
+}
+
+.hero__image {
+  width: auto;
+  max-width: 100%;
+}
+
 .eyebrow {
   display: inline-flex;
   align-items: center;
@@ -442,9 +451,11 @@ ul {
   }
 
   .hero__inner {
+    flex-direction: column;
     text-align: center;
-    min-height: 640px;
+    min-height: auto;
     padding: 40px 0;
+    gap: 16px;
   }
 
   .hero__text {
@@ -453,7 +464,18 @@ ul {
   }
 
   .hero__content {
-    padding-bottom: 24px;
+    order: 1;
+    padding-bottom: 0;
+  }
+
+  .hero__media {
+    display: flex;
+    justify-content: center;
+    order: 2;
+  }
+
+  .hero__image {
+    width: 320px;
   }
 
   .infobar {
@@ -489,6 +511,10 @@ ul {
 
   .hero__text {
     font-size: 1rem;
+  }
+
+  .hero__image {
+    width: 240px;
   }
 
   .btn--solid {
